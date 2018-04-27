@@ -9,15 +9,15 @@ body {
 }
 
 .green {
-  background-color: #63B317;
+  background-color: #167263;
 }
 
 .blue {
-  background-color: #0F7878;
+  background-color: #34257C;
 }
 
 .red {
-  background-color: #27238B;
+  background-color: #204177;
 }
 
 #body-content {
@@ -73,8 +73,24 @@ a:hover {
 
 .project-box {
   display: grid;
-  grid-template-rows: 5% 10% 5% 35% 5% 35% 5%;
+  grid-template-rows: 5% 10% 5% 75% 5%;
   grid-template-columns: 5% 42.5% 5% 42.5% 5%;
+}
+
+.side-panel-left {
+  grid-column: 2;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 47.5% 5% 47.5%;
+}
+
+.side-panel-right {
+  grid-column: 4;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 47.5% 5% 47.5%;
 }
 
 .title {
@@ -91,29 +107,31 @@ a:hover {
 }
 
 .big {
-  grid-row-start: 4;
-  grid-row-end: 7;
-  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 47.5% 5% 47.5%;
+
 }
 
 .small {
   display: grid;
-  grid-column: 4;
   grid-template-columns: 50% 2% 48%;
-  grid-template-rows: 12% 5% 75%;
+  grid-template-rows: 12% 5% 70% 5%;
 }
 
 .top {
-  grid-row: 4;
+  grid-row: 1;
 }
 
 .bot {
-  grid-row: 6;
+  grid-row: 3;
 }
 
 .proj-title {
   color: white;
-  font-size: 1.4em;
+  font-size: 1.8em;
   border-bottom: solid .2em white;
 }
 
@@ -121,18 +139,65 @@ a:hover {
   grid-column: 3;
 }
 
+.big .proj-title {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .small .proj-desc {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .1em;
   grid-column: 3;
   grid-row: 3;
 }
 
-.proj-img {
+.big .proj-desc {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .1em;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 1em;
+}
+
+.small .proj-img {
   grid-column: 1;
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: 6;
   overflow: hidden;
+}
+
+.big .proj-img {
+  grid-column: 1;
+  grid-row: 1;
+  overflow: hidden;
+  height: 100%;
 }
 
 .proj-img img {
   width: 100%;
+  min-height: 100%;
+}
+
+.small .proj-link {
+  text-align: right;
+  font-size: 1.4em;
+  grid-row: 5;
+  grid-column: 3;
+}
+
+.big .proj-link {
+  grid-row: 3;
+  grid-column: 2;
+  text-align: right;
+  font-size: 1.4em;
+  background-color: red;
+}
+
+.big .proj-info {
+  grid-row: 3;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 70% 30%;
 }

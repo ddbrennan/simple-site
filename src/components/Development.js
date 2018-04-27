@@ -7,9 +7,13 @@ class Development extends React.Component {
     return ( 
       <div className="project-box panel red" id="webdev">
         <div className="title">WEB DEVELOPMENT</div>
-        <Project name="kinship" size="big"/>
-        <Project name="oinkedIn" size="small top"/>
-        <Project name="rothko" size="small bot"/>
+        <div className="side-panel-left">
+          <Project name="kinship" size="big"/>
+        </div>
+        <div className="side-panel-right">
+          <Project name="oinkedIn" size="small top"/>
+          <Project name="rothko" size="small bot"/>
+        </div>
       </div>
     ) 
   } 

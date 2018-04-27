@@ -8,9 +8,11 @@ class Project extends React.Component {
     return ( 
       <div className={ `project ${this.props.size}` }>
         <div className="proj-img"><img src={ project.img } /></div>
-        <div className="proj-title">{ project.title }</div>
-        <div className="proj-desc">{ project.description }</div>
-        <div className="proj-link"><a href={ project.link }>LINK</a></div>
+        <div className="proj-info">
+          <div className="proj-title">{ project.title }</div>
+          <div className="proj-desc">{ project.description }</div>
+          <div className="proj-link"><a href={ project.link }>{ project.linkTitle }</a></div>
+        </div>
       </div>
     ) 
   } 
