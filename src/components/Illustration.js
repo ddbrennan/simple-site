@@ -7,9 +7,13 @@ class Illustration extends React.Component {
     return ( 
       <div className="project-box panel blue" id="illustration">
         <div className="title">DESIGN / ILLUSTRATION</div>
-        <Project name="critterbury" size="big"/>
-        <Project name="artcrank" size="small top"/>
-        <Project name="pestilence" size="small bot"/>
+        <div className="side-panel-left">
+          <Project name="critterbury" size="big"/>
+        </div>
+        <div className="side-panel-right">
+          <Project name="artcrank" size="small top"/>
+          <Project name="pestilence" size="small bot"/>
+        </div>
       </div>
     ) 
   } 

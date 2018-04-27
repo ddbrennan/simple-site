@@ -12,11 +12,11 @@ class Intro extends React.Component {
               <span> / </span> 
               <a href="mailto:ddbren@gmail.com?subject=Hello David!">EMAIL</a>
               <span> / </span> 
-              <a href="https://www.linkedin.com/in/david-d-brennan/">LINKEDIN</a>
+              <a href="https://www.linkedin.com/in/david-d-brennan/" target="_blank">LINKEDIN</a>
               <span> / </span> 
-              <a href="#">RESUME</a>
+              <a href="https://s3.us-east-2.amazonaws.com/david-brennan-dot-com/David_Brennan_Resume.pdf" target="_blank">RESUME</a>
               <span> / </span> 
-              <a href="https://medium.com/@ddbren">BLOG</a>
+              <a href="https://medium.com/@ddbren" target="_blank">BLOG</a>
             </div>
           </div>
           <div id="name">DAVID BRENNAN</div>

@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .panel {
@@ -50,7 +50,6 @@ body {
   color: white;
   text-align: right;
   font-size: 1.5em;
-  letter-spacing: .1em;
 }
 
 
@@ -118,7 +117,6 @@ a:hover {
 .small {
   display: grid;
   grid-template-columns: 50% 2% 48%;
-  grid-template-rows: 12% 5% 70% 5%;
 }
 
 .top {
@@ -132,14 +130,8 @@ a:hover {
 .proj-title {
   color: white;
   font-size: 1.8em;
+  letter-spacing: .05em;
   border-bottom: solid .2em white;
-}
-
-.small .proj-title {
-  grid-column: 3;
-}
-
-.big .proj-title {
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -147,14 +139,15 @@ a:hover {
 
 .small .proj-desc {
   font-family: 'Roboto Slab', serif;
-  letter-spacing: .1em;
-  grid-column: 3;
-  grid-row: 3;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: .5em;
 }
 
 .big .proj-desc {
   font-family: 'Roboto Slab', serif;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   grid-row: 2;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -163,8 +156,7 @@ a:hover {
 
 .small .proj-img {
   grid-column: 1;
-  grid-row-start: 1;
-  grid-row-end: 6;
+  grid-row: 1;
   overflow: hidden;
 }
 
@@ -180,19 +172,28 @@ a:hover {
   min-height: 100%;
 }
 
-.small .proj-link {
+.proj-link {
   text-align: right;
   font-size: 1.4em;
-  grid-row: 5;
-  grid-column: 3;
+  border: solid 5px white;
+  text-align: center;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.small .proj-link {
+  grid-row: 3;
+  grid-column: 2;
 }
 
 .big .proj-link {
   grid-row: 3;
   grid-column: 2;
-  text-align: right;
-  font-size: 1.4em;
-  background-color: red;
+}
+
+.proj-link:hover {
+  background-color: white;
+  color: #17114c;
 }
 
 .big .proj-info {
@@ -200,4 +201,11 @@ a:hover {
   display: grid;
   grid-template-rows: 15% 70% 15%;
   grid-template-columns: 70% 30%;
+}
+
+.small .proj-info {
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 60% 40%;
 }

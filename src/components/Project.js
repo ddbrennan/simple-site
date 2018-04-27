@@ -11,7 +11,7 @@ class Project extends React.Component {
         <div className="proj-info">
           <div className="proj-title">{ project.title }</div>
           <div className="proj-desc">{ project.description }</div>
-          <div className="proj-link"><a href={ project.link }>{ project.linkTitle }</a></div>
+          <div className="proj-link" onClick={()=> window.open(project.link, "_blank")}>{ project.linkTitle }</div>
         </div>
       </div>
     ) 
